@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <!-- above line ka mtlb hai we r using a backend called php and we are commanding form to submit our data in that php backend , data wo hai jo form k ander hai-->
+        <!-- div used instead of br tag as we have to avoid br as much as we can, div is division which is used to make section in html for set of elements -->
+        <label for="sameers">class</label>
+        <div>
+
+            <input type="text" name="sameers" >
+        </div>
+      
+        <!-- why is label used- label is used to tell the user the value that should be entered in the associated input field -->
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+
+        <!-- id mtlb identifier ......is cheez ko identify kr lo is naam se id="name"........name se find krlo aur ek naam se do log nhi ho skte ek page pr-->
+        <br>
+        <!-- br is not recommended we used here it casually -->
+        <label for="role"> Role</label>
+        <div>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        
+        <div>
+            Email: <input type="email" name="myEmail">
+            <!-- name wo naam hai jisse aapka backend is tag ko pehchanega -->
+        </div>
+
+        <br>
+        <label for="date">Date</label>
+        <div>
+            <input type="date" name="mydate" id="date">
+        </div>
+        <br>
+        <label for="datetime">Datetime</label>
+        <div>
+
+            <input type="datetime-local" name="mydatetime" id="datetime">
+        </div>
+        <br>
+        <div>
+            <label for="mybutton">click on this</label>
+            <input type="button" id="mybutton" name="thisbutton">
+        </div>
+        <br>
+        <div>
+            <label for="colorpicker">You can use this to choose the desired color</label>
+            <input type="color" id="colorpicker" name="color">
+        </div>
+        <br>
+        <div>
+            <label for="forfile">You can choose and select a file from here</label>
+            <input type="file" name="thisisfile" id="forfile">
+        </div>
+        <br>
+        <label for="photo">Here you can upload your photo</label>
+        <input type="image" id="photo" name="yourpic">
+
+        <br><br>
+        <div>
+            Bonus: <input type="number" name="mybonus">
+            <!-- here we can use only numbers and only alphabet 'e' which is used to give power to 10....for ex-if we have to write-43*10**5 we will go like 43e5 
+        here 'e' will be considered as '10 raise to power' -->
+        </div>
+        <br>
+        <!-- down we can see have used lable tag which is used as follow-
+        #for me id ki value jis input k liye use kr rhe
+        <label></label> bich me wo heading jo dena ho jaise niche wale me heading jayegi "Are you eligible?"
+        "Are you eligible" pr click krne pr pr bhi checkbox fill hojayega 
+         <div> k uper likhna hota hai lable -->
+        <div>
+            <label for="eligibility">Are you eligible?</label>
+            <input type="checkbox" name="myeligibility" id="eligibility" checked>
+            <!-- here i have used 'checked' in last to make the checkbox checked by default -->
+        </div>
+        
+        <br>
+        <div>
+            <label for="all">this is to set the range of a particular field</label>
+            <input type="range" id="all">
+        </div>
+        <br>
+        <div>
+            <label for="all">this is for time</label>
+            <input type="time" id="all" >
+        </div>
+        <br>
+        <div>
+            Gender: male<input type="radio" name="mygender"> female<input type="radio" name="mygender">
+            other<input type="radio" name="mygender">
+            <!-- agr kisi bhi checkboxes me name same kr denge to unme se koi ek hi check hoga,we can select only one among above three-->
+        </div>
+        <br>
+        <div>
+            Write about yourself: 
+            <br>
+            <textarea name="Mytext" cols="30" rows="10"></textarea>
+            <!-- rows aur col change kr skte hai -->
+        </div>
+        <br>
+        write one thing that you have achieved so long?<br>
+        <textarea name="" id="" cols="40" rows="10"></textarea>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <option value="swf" selected>Swift</option>
+                <option value="ind">Indica</option>
+                <!-- "selected" rhega jo be default whi dikhhayega -->
+            </select>
+            <br>
+            <label for="">Model</label>
+            <select name="model" id="">
+                <option value="">Gen-1</option>
+                <option value="">Gen-2</option>
+                <option value="">Gen-3</option>
+                <option value="">Gen-4</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Password<input type="password" >
+        </div>
+        <br>
+        <div>
+            <input type="Submit" value="Submit now">
+            <!-- submit krne pr backend me chala jayega-->
+            <input type="Reset" value="Reset this asap">
+        </div>
+    </form>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <p>i can walk</p>
+<p>i can talk</p>
+<div><p>i can swim</p><p>hey</p></div>
+<div></div> -->
+
+
