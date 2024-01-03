@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ids and classes HTML</title>
+</head>
+
+<body>
+    <!-- ek element ki shirf ek id ho skti hai aur ek id shirf ek element me ho skti hai -->
+    <!-- Assume I am having 100 elements in my HTML and I want to give a red background to all the 100 elements.To do this, we have two options. Either we have to select each element and assign a red background to it or we can create a class redBG and assign a red background to it. Then we can give this class to the elements in which we want a red background color. To avoid confusion, I am assuming that the class redBG is already defined.
+
+-(we can assign only one ID to a particular element) but it is not so in the case of classes. An element can have more than one class in itself. The more classes we add in an element, the more property will get added to it.-->
+    <h3>Ids and classes tutorial</h3>
+    <!-- IMPORTANT POINT- ek element me multiple class ho skti hai aur
+    aur ek class ko multiple element me lga skte hai -->
+    <div id="mainBox" class="redBg">
+        this is mainbox
+    </div>
+    <span class="redBg"></span>
+    <!-- Emmet
+    Classes are denoted by a dot ‘.’ and ID is denoted by hash ‘#’. For example,if i want span of class redBg i will write that element name(span) followed by .redBG 
+    and for id we write element name followed by #main -->
+    <span class="redBg"></span>
+    <!-- if i want span of id spanid then i will write span followed by #spanid and then enter (shortcut bcoz of emmet) to create span element having an id of spanid-->
+    <span id="spanid"></span>
+    <div class="redBg blackBorder anotherClass"></div>
+    <!-- Emmet takes div tag as default (if likh de ".blackBorder" to se enclose krega)-->
+    <div class="blackBorder"></div>
+    
+    <!-- creating multiple elements using emmet -->
+    <!-- span.myClass.myClass2.myClassa3*4 + <Tab> to print 4 similar elements using emmet
+        vs me emmet build in hoti hai.........ye sb note pad me nhi hoga kyki usme emment nhi hota -->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">Fourth</span>
+    
+    
+</body>
+
+</html>
