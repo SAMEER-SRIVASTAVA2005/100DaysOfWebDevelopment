@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <!-- revise lecture 13:first CSS tutorial notes -->
+    <style>
+        p {
+            color: red;
+            background-color : orange ;
+            /* background-color : black !important; */
+            /* jaise uper imp likha hai waisee likh k important bna skte hai tb shiirf yhi bg bnega as compare to other bg applied (cant be overwritten either something written after) */
+            /* jo cheez baad me likhi hai wo jyada order leti hai among internal and external -maybe before written statement is false external is prioritise*/
+        }
+    </style>
+
+    <!-- here external css is linked -->
+    <link rel="stylesheet" href="tut13.css">
+
+    
+</head>
+  <!-- PRACTICALLY SEEN THAT AMONG INTERNAL AND EXTERNAL CSS...............EXTERNAL IS PRIORTISE -->
+<body>
+    <h3>This is CSS Tutorial</h3>
+    <p>This Tutorial will teach you everything you need to know about
+        HTML/CSS</p>
+    <!-- if we apply inline and internal css both for p then p will prioritise inline css -->
+    <!-- 1st priority-inline -->
+    <!-- 2nd priority-internal aur external me se jo baad me likha rhega -->
+
+</body>
+
+</html>
+
+
