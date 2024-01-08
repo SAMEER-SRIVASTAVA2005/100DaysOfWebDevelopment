@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        
+        p {
+            border: 4px solid pink;
+            color: red;
+            /* div k anderr ka p bhi red ho jayega isse */
+            /* example of element selector  */
+        }
+
+        #firstpara {
+            color: yellow;
+            /* example of id selector  */
+        }
+
+        /* above can be used to color only p with id */
+        /* #dusrapara {
+            color: yellow;
+        }
+  */
+        .klass {
+            color: green;
+            /* example of class selector  */
+        }
+
+        .bgblue {
+            background-color: darkgoldenrod;
+        }
+
+        footer,span{
+            background-color: orange;
+        }
+        /* example of grouping selector */
+        
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstpara">This is a simple paragraph to demonstrate css selectors</p>
+    <!-- id k liye "#"                     class k liye "."  -->
+    <!-- id unique hoti hai                class multiple ho skti hai  -->
+    <p id="dusrapara" class="klass bgblue">This is another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p>This is yet another simple paragraph to demonstrate css selectors</p>
+    </div>
+    
+    <span>ye span hai</span>
+    <footer>iskp footer bolte hai</footer>
+
+
+    <p style="text-align:center;">
+        <a style="color:aqua;" href="">orange are orange in color</a>
+    </p>  <!-- if i apply text-align=center css directly to anchor tag it would not happen-  css cannot be directly applied for the alignment of the anchor tag. The css (text-align:center;) should be applied to the parent div or some other element for the alignment effect to take place on the anchor tag.-->
+    
+
+    <!-- jb kisi ek element ko style krna ho to hm log id ka use krte hai
+    aur jb multiple elements k liye style use krna hoto class selector ka use krte hai -->
+
+</body>
+
+</html>
