@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <style>
+        p{
+            /* agr do font family h to jo baad me llikha hoga wo execute hoga */
+            
+            /* sofia -web font hai chrome pr ja kr <link rel href(link the stylesheet)> copy kro aur fhir font family ka naam likh do....aise hoga import */
+
+            font-family:"sofia",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* fonts ko stack kr skte hai-list of fonts diye hai usme se one by one hr font ko check krega aur jo available h lg jayega (A user agent iterates through the list of family names until it matches an available font ) */
+
+            font-size: 33px;  
+            /* px is (1/96)th of an inch  */
+
+            line-height: 1.3em;
+            /* em = font size equal to parent k font size ka kitna(kuch) guna */
+
+           
+        }
+
+        span{
+            font-weight:bold;
+            /* used to make bold */
+
+            font-style: italic;
+        }
+    </style>
+
+    <!-- In CSS, we have two types of fonts- web-safe fonts and web fonts. WEB-SAFE FONTS-- are the fonts that come pre-installed with most of the operating systems, therefore, using these fonts you will never encounter any error(CSS font stack-website to learn abou it).
+     But on the other hand, some fonts are not shipped with the OS; so to use them, we need to import them from the web. -->
+
+</head>
+<body>
+    <h4> CSS Fonts</h4>
+    <p>Lets play with <span>fonts.</span> It is very exciting</p>
+</body>
+</html>
