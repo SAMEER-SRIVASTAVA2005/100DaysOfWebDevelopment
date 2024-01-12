@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders and Backgrounds </title>
+    <style>
+        #firstpara {
+            background-color: red;
+            height: 100px;
+            width: 445px;
+            /* border-width:5px ;
+            border-color: green ;
+            border-style:solid ;  */
+            /* border style solid dene jaruri hai aur by default ye black color leleta hai*/
+
+            /* if i want to put border-width,style and color at once and in one element (irrespective of order of width style and color.... they are executed) */
+            border: 5px solid green;
+
+
+            border-radius: 15px;
+            /* agr corner ko curvy(rounded corners) bnana hai to isse use krenge */
+        }
+
+        #secondpara {
+            background-color: rgb(58, 243, 98);
+            height: 100px;
+            width: 445px;
+            border-top: 4px solid violet;
+            border-bottom: 4px solid yellow;
+            border-right: 4px solid blue;
+            border-left: 4px solid red;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+
+        #thirdpara {
+            height: 500px;
+            width: 455px;
+            background-image: url(https://www.codewithharry.com/img/logo-blue.png);
+            border: 5px solid orange;
+            /* background-repeat: repeat-x;
+            background-repeat: repeat-y; */
+            /* above both can be used to repeat in x and y axis respectively */
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* center center
+               center left
+               center right
+               top center
+               top left 
+               top right
+               bottom center
+               bottom left
+               bottom right
+               ()px ()px
+
+
+               1st parameter-center, top,bottom, ()px
+               2nd parameter-center, left, right, ()px
+            
+
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is a heading</h3>
+    <p id="firstpara">This is a paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondpara">This is my second paragraph</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdpara">This is my third paragraph</p>
+</body>
+
+</html>
