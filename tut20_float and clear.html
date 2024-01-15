@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            width: 1000px;
+            border: 4px solid blue;
+            background-color: rgb(176, 93, 254);
+            margin: 75px auto;
+        }
+
+        .item {
+            border: 4px solid red;
+            margin: 12px 5px;
+            padding: 12px 5px;
+            background-color: aquamarine;
+        }
+
+        #fruit {
+            /* float-use to make the element float in the side choosen */
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            /* if hm float left na lgaate stationary me to fruit aur computar overlap ho jata to wo avoid krne k liye we use clear:left; and it means koi bhi float left element allowed nhi hai is stationary element me and same goes it float right and to avoid overlapping from both float we use clear:both;    */
+            clear: both;
+            width: 100%;
+        }
+
+
+        p, h3 {
+            /* text-align: right;
+            text-align: left; */
+            /* jo baad me likha hota h wo execute hoga(txt-align:left & right me se) */
+            /* text-align: center; */
+            text-align: justify;
+
+        }
+
+        h1 {
+
+            margin: 30px auto;
+            width: 310px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- emmet use
+    if we write p#id.klass
+    and then enter
+     then my p->paragraph will be created with id="ed" and class="klass"  -->
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni harum vero
+                cumque nemo amet, libero accusamus impedit alias quo sint. Rem dolores facilis esse cum nihil. Ad
+                repellat ipsum sequi eum, exercitationem nobis aperiam?Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Facere vel veritatis tenetur? Pariatur, maxime. In harum est veritatis exercitationem
+                tempore nobis, ipsa et iste officia ipsam saepe voluptate, cumque vitae unde mollitia nisi illo!</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computers</h3>
+            <p id="Computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni harum vero
+                cumque nemo amet, libero accusamus impedit alias quo sint. Rem dolores facilis esse cum nihil. Ad
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, autem?
+                repellat ipsum sequi eum, exercitationem nobis aperiam?Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Facere vel veritatis tenetur? Pariatur, maxime. In harum est veritatis exercitationem
+                tempore nobis, ipsa et iste officia ipsam saepe voluptate, cumque vitae unde mollitia nisi illo!</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="Stationarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni harum
+                vero cumque nemo amet, libero accusamus impedit alias quo sint. Rem dolores facilis esse cum nihil. Ad
+                repellat ipsum sequi eum, exercitationem nobis aperiam?</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Stationary</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni harum
+                vero cumque nemo amet, libero accusamus impedit alias quo sint. Rem dolores facilis esse cum nihil. Ad
+                repellat ipsum sequi eum, exercitationem nobis aperiam?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
