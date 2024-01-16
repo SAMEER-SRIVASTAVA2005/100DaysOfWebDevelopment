@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container {
+            border: 4px solid red;
+            background-color: rgb(47, 239, 175);
+            margin: 34px auto;
+            padding: 34px;
+            width: 666px;
+        }
+
+        a {
+            text-decoration: none;
+            /* txt-dec se underline tha wo hta and we can add something too */
+            color: black;
+        }
+
+        a:hover {
+            color: black;
+            background-color: red;
+            /* agr visited h tb hover ka color nhi dikhayi dega */
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:active {
+            color: rgb(251, 0, 171);
+            /* click krne pr text color ka color diya gya color dikhayi dega */
+            background-color: aqua;
+            /* on clicking this bg-color will be seen */
+        }
+
+        .btn {
+            background-color: orange;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            color: brown;
+            background-color: white;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+
+<!-- search about bootstrap -->
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my paragraph</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nisi, natus enim explicabo exercitationem
+            maiores, officiis adipisci eligendi numquam reiciendis, in ipsam! Voluptatem reiciendis reprehenderit
+            similique suscipit ex eos ipsa facilis veniam animi quos!
+        </p>
+        <a href="https://google.com" class="btn">Read More</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+</html>
