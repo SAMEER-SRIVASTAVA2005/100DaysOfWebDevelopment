@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: red;
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow: auto;  /* isse overflow rok skte hai bg color wapas aajayega*/
+        }
+        .navbar li{
+            float:left;  /* when we float something it get overflow from its parent that is why background color has stop appearing after we applied float*/
+            list-style:none;  /* list ki wajh se jo dot(bullets) arrhe the wo hat jayenge as it is set to none */
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
